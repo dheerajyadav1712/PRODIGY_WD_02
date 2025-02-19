@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #ff007b, #6e7bff, #ffdf77);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    color: white;
+    text-align: center;
+}
+
+/* Background Animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    position: fixed;
+    left: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #111;
+    padding: 10px;
+    border-radius: 5px;
+    transition: left 0.3s ease;
+    width: 130px;
+}
+
+.sidebar:hover {
+    left: 0px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.menu-item span {
+    display: none;
+}
+
+.sidebar:hover .menu-item span {
+    display: inline;
+}
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    animation: headerGlow 2s infinite alternate;
+}
+
+@keyframes headerGlow {
+    0% { box-shadow: 0 0 10px #ff007b; }
+    100% { box-shadow: 0 0 20px #6e7bff; }
+}
+
+#headerTitle {
+    margin: 0;
+    font-size: 3em;
+    text-shadow: 0 0 10px cyan, 0 0 20px blue;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/* Live Clock in Header */
+#headerClock {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ffdf77;
+    text-shadow: 0 0 5px yellow;
+}
+
+/* Footer */
+footer {
+    position: relative; /* Moves footer down as content grows */
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust transparency */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px; /* Adds space between laps and footer */
+}
+
+.content {
+    min-height: 60vh; /* Ensures content takes full height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Box Sections */
+.box {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    width: 50%;
+}
+
+/* Neon Display */
+.time-display {
+    font-size: 3em;
+    margin: 20px 0;
+    color: #ffdf77;
+    text-shadow: 0 0 10px #ffdf77;
+    animation: pulse 1.5s infinite;
+}
+
+/* Buttons */
+.neon-button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #ff007b;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    transition: 0.3s ease;
+}
+
+.neon-button:hover {
+    background-color: #ff0066;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+/* Hidden Sections */
+.hidden {
+    display: none;
+}

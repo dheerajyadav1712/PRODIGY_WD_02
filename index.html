@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Sidebar Navigation 
+    <div class="sidebar">
+        <div class="menu-item" onclick="showSection('stopwatch')">⏱️ <span>Stopwatch</span></div>
+    </div> -->
+
+    <!-- Header -->
+    <header>
+        <h1 id="headerTitle">⏱️ Stopwatch</h1>
+        <div>
+            <div id="headerClock"></div>
+            <div id="headerDate"></div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="content">
+
+        <!-- Stopwatch Section -->
+        <div id="stopwatch" class="box">
+            <h2>Stopwatch</h2>
+            <div class="time-display" id="stopwatchDisplay">00:00:00.000</div>
+            <button class="neon-button" onclick="startStopwatch()">Start</button>
+            <button class="neon-button" onclick="pauseStopwatch()">Pause</button>
+            <button class="neon-button" onclick="resetStopwatch()">Reset</button>
+            <button class="neon-button" onclick="lapTime()">Lap</button>
+            <ul id="laps"></ul>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Neon Stopwatch. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
