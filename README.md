@@ -1,4 +1,4 @@
-# 🚀 Neon Stopwatch ⏱️ | PRODIGY_WD_02  
+# 🚀 Stopwatch ⏱️ | PRODIGY_WD_02  
 
 > **A sleek, futuristic stopwatch with a neon aesthetic and smooth functionality.** 🌟  
 
